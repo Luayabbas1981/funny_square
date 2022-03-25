@@ -1,0 +1,48 @@
+
+body {
+    height: 100vh;
+    background-color:#d4e5ed;
+}
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    top: 45%;
+    left: 45%;
+    border-radius: 2rem;
+    background-color:rgb(83 120 139);
+    transition: .7s;
+
+}
+
+div {
+   position: absolute; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-color: rgb(249, 249, 253);
+   transition: calc(.1s * var(--p));
+   font-size: 0px;
+   color: rgb(161, 161, 161);
+   
+}
+section:hover {
+   transform: scale(2.9);
+}
+section:hover div {
+   transform: translate(calc(50px * var(--x)), 
+   calc(45px *var(--y)));
+   font-size: 14px;
+  
+}
+div:hover i {
+    text-shadow: 0 0 2px rgb(250, 127, 12), 0 0 2px rgb(255, 179, 0),
+   ;
+  color: rgb(250, 127, 12);
+}
