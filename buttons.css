@@ -35,10 +35,11 @@ section:hover {
 section:hover div {
   transform: translate(calc(50px * var(--x)), calc(45px * var(--y)));
   font-size: 14px;
- 
+  box-shadow: 0px 0px 5px var(--c);
 }
 div:hover i {
  color:var(--c);
+ text-shadow: 0px 0px 25px var(--c);
 }
 @media (max-width: 767px) {
   section {
