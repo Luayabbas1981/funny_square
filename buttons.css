@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background-color: #d4e5ed;
+  background-color: black;
 }
 section {
   position: relative;
@@ -9,10 +9,10 @@ section {
   align-items: center;
   width: 150px;
   height: 150px;
-  top: 45%;
+  top: 40%;
   left: 45%;
   border-radius: 2rem;
-  background-color: rgb(83 120 139);
+  background-color: rgb(255, 255, 255, 0.1);
   transition: 0.7s;
 }
 
@@ -24,20 +24,21 @@ div {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: rgb(249, 249, 253);
+  background-color: rgb(255, 255, 255, 0.1);
   transition: calc(0.1s * var(--p));
   font-size: 0px;
-  color: rgb(161, 161, 161);
+  color: rgb(255, 255, 255, 0.1);
 }
 section:hover {
-  transform: scale(2.9);
+  transform: scale(2.4);
 }
 section:hover div {
   transform: translate(calc(50px * var(--x)), calc(45px * var(--y)));
   font-size: 14px;
+ 
 }
 div:hover i {
-  color: rgb(250, 127, 12);
+ color:var(--c);
 }
 @media (max-width: 767px) {
   section {
@@ -48,3 +49,4 @@ div:hover i {
     transform: scale(2);
   }
 }
+
