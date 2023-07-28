@@ -13,8 +13,8 @@ section {
   top: 40%;
   left: 45%;
   border-radius: 2rem;
-  background-color: rgb(255, 255, 255, 0.1);
   transition: 0.7s;
+  cursor: pointer;
 }
 
 div {
